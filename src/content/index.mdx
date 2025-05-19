@@ -1,14 +1,62 @@
 import { Bleed } from 'nextra/components'
 
-# Introduction
+# 🧠 DailyInsightAI — Your Generative AI Journaling Assistant
 
-**Nextra** is a [Next.js](https://nextjs.org) based static site generator.
+**DailyInsightAI** is a personalized journaling and idea management app that leverages Generative AI to help you reflect better and grow smarter.
 
-It supports Markdown and React components ([MDX](/features/mdx)), automatically
-generated [sidebar and anchor links](/get-started#sidebar-and-anchor-links),
-file-system based routing, built-in syntax highlighting, image optimization,
-custom layouts, i18n, and all the features you love about Next.js.
+## ✨ What It Does
 
-Here's what you will get in 1 minute:
+- 📝 **Summarizes** your journal entries using AI
+- 📊 **Extracts insights** and highlights patterns
+- ☁️ **Stores entries securely** in the cloud via MongoDB Atlas
+- 🧭 **Guides daily reflection** with lightweight prompts
+- 📈 **Tracks mood and ideas** over time
 
-<Bleed>![Nextra Example](/demo.png)</Bleed>
+> ⚠️ The current version is CLI-based. A web interface is coming soon!
+
+## 🛠️ Tech Stack
+
+- **Language**: Python
+- **AI**: OpenAI / LLMs
+- **Database**: MongoDB Atlas
+- **Packaging**: Poetry
+- **Testing**: Pytest
+
+## 📂 Project Structure
+
+```bash
+dailyinsightai/
+├── src/
+│   └── dailyinsightai/  # Core CLI logic
+├── tests/               # Unit tests
+├── .env.example         # Environment variables template
+├── pyproject.toml       # Poetry project configuration
+└── README.md            # Project overview
+```
+
+## 🚀 Getting Started
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/nmo-genio/dailyinsightai.git
+cd dailyinsightai
+poetry install
+```
+
+Run the CLI tool:
+
+```bash
+poetry run dailyinsightai
+```
+
+## 📌 Roadmap
+
+- [ ] Web interface (Next.js + Nextra)
+- [ ] Sentiment analysis dashboard
+- [ ] Daily email summaries
+- [ ] Multi-user support
+
+---
+
+> For more details, visit the [DailyInsightAI GitHub repository](https://github.com/nmo-genio/dailyinsightai).
